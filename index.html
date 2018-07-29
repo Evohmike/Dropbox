@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Dropbox</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav id="sidebar">
+            <ul class="nav-flex-column">
+                <li class="logo justify-content-center">
+                    <a href="#home"> <img  class="Logo" src="images/logo2.png" ></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Files</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sharing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Get Started</a>
+                </li>
+            </ul>
+            <div class="progress-pane">
+                <p>50GB &#47; 100GB</p>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <div id="search">
+                            <input class="form-control" type="search" placeholder="Search.....">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="userinfo float-right">
+                        <span id="toggleName"></span></br>
+                        <span id="Mail"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container2">
+            <h1 class="header1">Photos</h1>
+            <div class="row">
+                <div class="col-md-6 A">
+                    <span class="d-inline-block" tabindex="0" data-container="body" delay: { "show": 500, "hide": 100 } data-toggle="tooltip" data-placement="bottom" title="Upload file">
+                            <button class="btn btn-primary"  data-placement="bottom" style="pointer-events: none;" type="button" disabled><i class="fa fa-upload"></i></button>
+                    </span>
+                    <span class="d-inline-block" tabindex="0" data-container="body" delay: { "show": 500, "hide": 100 } data-toggle="tooltip" data-placement="bottom" title="Create new file">
+                            <button class="btn btn-primary"  data-placement="bottom" style="pointer-events: none;" type="button" disabled><i class="material-icons">&#xe2cc;</i></button>
+                          </span>
+                    <span class="d-inline-block" tabindex="0" data-container="body" delay: { "show": 500, "hide": 100 } data-toggle="tooltip" data-placement="bottom" title="Insert a file">
+                            <button class="btn btn-primary"  data-placement="bottom" style="pointer-events: none;" type="button" disabled><i class="fa fa-pencil-square-o"></i></button>
+                     </span>
+                    <span class="d-inline-block" tabindex="0" data-container="body" delay: { "show": 500, "hide": 100 } data-toggle="tooltip" data-placement="bottom" title="Delete a file">
+                            <button class="btn btn-primary"  data-placement="bottom" style="pointer-events: none;" type="button" disabled><i class="fa fa-trash-o"></i></button>
+                      </span>
+                </div>
+                <div class="col-md-6 B">
+                    <nav class="navbar navbar-expand-lg navbar-light float-right">
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" aria-controls="secondaryNav" aria-expanded="false" aria-label="Toggle navigation" data-target="#secondaryNav" name="button">
+                            <span class="navbar-toggler-icon"></span>
+                         </button>
+                        <div class="collapse navbar-collapse" id="secondaryNav">
+                            <ul class=" navbar-nav nav-pills float-right">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Size</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Modified</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="row-fluid row">
+                    <div class="col-sm-2 ">
+                        <div class="thumbnail"> <img class="lightbox" src="images/download (1).jpeg" alt="">
+                            <span class="hoverOn"><i class="fa fa-check-circle-o"></i></span>
+                            <div class="caption">
+                                <p class="caption">Cute cats.jpeg</p>
+                                <p class="caption"><small class="text-time">2 MB</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="thumbnail"> <img class="lightbox" src="images/download (2).jpeg" alt="">
+                            <span class="hoverOn"><i class="fa fa-check-circle-o"></i></span>
+                            <div class="caption">
+                                <p class="caption">Arranged leaves.jpeg</p>
+                                <p class="caption"><small class="text-time">1.5 MB</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="thumbnail"> <img class="lightbox" src="images/download.jpeg" alt="">
+                            <span class="hoverOn"><i class="fa fa-check-circle-o"></i></span>
+                            <div class="caption">
+                                <p class="caption">white rabbit.jpeg</p>
+                                <p class="caption"><small class="text-time">2.5 MB</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="thumbnail"> <img class="lightbox" src="images/images (1).jpeg" alt="">
+                            <span class="hoverOn"><i class="fa fa-check-circle-o"></i></span>
+                            <div class="caption">
+                                <p class="caption">little frog.jpeg</p>
+                                <p class="caption"><small class="text-time">2 MB</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="thumbnail"> <img class="lightbox" src="images/images (2).jpeg" alt="">
+                            <span class="hoverOn"><i class="fa fa-check-circle-o"></i></span>
+                            <div class="caption">
+                                <p class="caption">Smart jeans.jpeg</p>
+                                <p class="caption"><small class="text-time">1.5 MB</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2 ">
+                        <div class="thumbnail"> <img class="lightbox" src="images/image1.jpeg" alt="">
+                            <span class="hoverOn"><i class="fa fa-check-circle-o"></i></span>
+                            <div class="caption">
+                                <p class="caption">Jane.jpeg</p>
+                                <p class="caption"><small class="text-time">3 MB</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="thumbnail"> <img class="lightbox" src="images/image2.jpeg" alt="">
+                            <span class="hoverOn"><i class="fa fa-check-circle-o"></i></span>
+                            <div class="caption">
+                                <p class="caption">Carol.jpeg</p>
+                                <p class="caption"><small class="text-time">2 MB</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="thumbnail"> <img class="lightbox" src="images/image3.jpeg" alt="">
+                            <span class="hoverOn"><i class="fa fa-check-circle-o"></i></span>
+                            <div class="caption">
+                                <p class="caption">cushy.jpeg</p>
+                                <p class="caption"><small class="text-time">2.5 MB</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="thumbnail"> <img class="lightbox" src="images/image4.jpeg" alt="">
+                            <span class="hoverOn"><i class="fa fa-check-circle-o"></i></span>
+                            <div class="caption">
+                                <p class="caption">Naomi.jpeg</p>
+                                <p class="caption"><small class="text-time">3 MB</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="thumbnail"> <img class="lightbox" src="images/image5.jpeg" alt="">
+                            <span class="hoverOn"><i class="fa fa-check-circle-o"></i></span>
+                            <div class="caption">
+                                <p class="caption">Vicky.jpeg</p>
+                                <p class="caption"><small class="text-time">4.2 MB</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="thumbnail"> <img class="lightbox" src="images/pic1.jpeg" alt="">
+                            <span class="hoverOn"><i class="fa fa-check-circle-o"></i></span>
+                            <div class="caption">
+                                <p class="caption">Pelo.jpeg</p>
+                                <p class="caption"><small class="text-time">2.2 MB</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="thumbnail"> <img class="lightbox" src="images/pic2.jpeg" alt="">
+                            <span class="hoverOn"><i class="fa fa-check-circle-o"></i></span>
+                            <div class="caption">
+                                <p class="caption">Zedd.jpeg</p>
+                                <p class="caption"><small class="text-time">2.8 MB</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="thumbnail"> <img class="lightbox" src="images/pic3.jpeg" alt="">
+                            <span class="hoverOn"><i class="fa fa-check-circle-o"></i></span>
+                            <div class="caption">
+                                <p class="caption">Ricky.jpeg</p>
+                                <p class="caption"><small class="text-time">3 MB</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="thumbnail"> <img class="lightbox" src="images/pic4.jpeg" alt="">
+                            <span class="hoverOn"><i class="fa fa-check-circle-o"></i></span>
+                            <div class="caption">
+                                <p class="caption">Frank.jpeg</p>
+                                <p class="caption"><small class="text-time">2.2 MB</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="thumbnail"> <img class="lightbox" src="images/pic5.jpeg" alt="">
+                            <span class="hoverOn"><i class="fa fa-check-circle-o"></i></span>
+                            <div class="caption">
+                                <p class="caption">Chris.jpeg</p>
+                                <p class="caption"><small class="text-time">2.3 MB</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="logindiv">
+            <form class="form" action="#" id="login">
+                <h3>Login</h3>
+                <hr/><br/>
+                <label class="label">Username : </label>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="username" required placeholder="Username" />
+                </div>
+                <label class="label">Email : </label>
+                <div class="form-group">
+                    <input type="email" class="form-control" required id="userEmail" placeholder="Email" />
+                </div>
+                <input type="button" id="loginbtn" value="Login" />
+                <br/>
+            </form>
+        </div>
+        <!--bdhdhd-->
+
+    </div>
+
+</body>
+
+</html>
