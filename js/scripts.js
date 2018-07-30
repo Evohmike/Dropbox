@@ -1,6 +1,6 @@
 //Business logic
-function userDetails(firstName,email){
-  this.name=firstName;
+function userDetails(userName,email){
+  this.name=userName;
   this.email=email;
 }
 userDetails.prototype.showName=function(){
@@ -11,40 +11,28 @@ userDetails.prototype.showEmail=function(){
 }
 //User interface
 $(document).ready(function() {
-setTimeout(popup, 500);
-function popup() {
-$("#logindiv").css("display", "block");
+setTimeout(pop, );
+function pop() {
+$("#sign-in").css("display", "block");
 }
 $('.thumbnail').hover(
     function(){
-        $(this).find('.hoverOn').slideDown(250);
+        $(this).find('.hover-shadow ').slideDown();
     },
     function(){
-        $(this).find('.hoverOn').slideUp(250);
+        $(this).find('.hover-shadow').slideUp();
     }
   );
-$(".list-inline-item").hover(
-    function(){
-      $(this).find(".upload").slideDown(250);
-    },
-    function(){
-      $(this).find(".upload").slideUp(250);
-    }
-  );
-  $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-});
-$("#loginbtn").click(function() {
+$("#signinbtn").click(function() {
 var name = $("#username").val();
 var email = $("#userEmail").val();
 var newUserDetails=new userDetails(name,email);
 if (name == "" || email == ""){
-alert("Please fill all required fields!");
+alert("kindly fill in your username and email address.");
 }else{
-  $("#logindiv").css("display", "none");
-  $("#toggleUname").append('<i class="fa fa-bell-o">'+'&nbsp;&nbsp;&nbsp;'+newUserDetails.name+"&nbsp;&nbsp;&nbsp;"+'<i class="fa fa-sort-down showEmail">'+'</i>');
-  $("#toggleUname").click(function(){
-    $("#userMail").text(newUserDetails.email);
+  $("#sign-in").css("display", "none");
+  $("#toggleUsername").click(function(){
+    $("#userEmail").text(newUserDetails.email);
   });
 }
 });

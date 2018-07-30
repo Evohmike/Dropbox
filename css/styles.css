@@ -59,31 +59,6 @@
     font-size: 26px;
 }
 
-.d-inline-block i {
-    height: 40px;
-    width: 70px;
-    font-size: 34px;
-}
-
-.fa-link {
-    transform: rotate(-40deg);
-}
-
-.fa-fa-search {
-    background-color: transparent;
-}
-
-#search .form-control {
-    outline: none;
-    background-color: transparent;
-    border: 0px solid;
-    height: 30px;
-    width: 160px;
-    color: #000;
-    font-family: 'MMM';
-    box-shadow: none;
-}
-
 .header1 {
     font-weight: 150;
     margin-left: 7%;
@@ -98,87 +73,29 @@
     width: 100%;
 }
 
-.thumbnail i {
-    font-size: 30px;
-    color: rgba(66, 139, 202, 0.5);
-}
-
-custom-search-input button {
-    border: 0;
-    background: none;
-    padding: 2px 5px;
-    margin-top: 2px;
-    position: relative;
-    left: -28px;
-    margin-bottom: 0;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-}
-
-.search-query:focus+button {
-    z-index: 3;
-}
-
-.btn-outline-secondary:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.fa-check-circle-o {
+.hover-shadow {
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+    display: none;
     text-align: right;
-    left: 80%;
-}
-
-.hoverOn {
     position: absolute;
     top: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.75);
-    width: 100%;
-    height: 100%;
-    padding: 2%;
-    display: none;
-    text-align: right;
-    color: #fff !important;
-    z-index: 2;
-}
-
-#popup {
-    padding-top: 80px;
+    background: black;
+    opacity: 0.85;
 }
 
 .form {
-    border-radius: 2px;
-    padding: 20px 30px;
-    box-shadow: 0 0 15px;
-    font-size: 14px;
+    padding: 30px 30px;
+    font-size: 16px;
     font-weight: bold;
-    width: 350px;
-    margin: 20px 250px 0 35px;
+    width: 300px;
     float: left;
 }
 
-input {
-    width: 100%;
-    height: 35px;
-    margin-top: 5px;
-    border: 1px solid #999;
-    border-radius: 3px;
-    padding: 5px;
-}
-
-input[type=button] {
-    background-color: #123456;
-    border: 1px solid white;
-    font-family: 'Fauna One', serif;
-    font-Weight: bold;
-    font-size: 18px;
-    color: white;
-    width: 49%;
-}
-
-#logindiv {
-    opacity: 0.92;
+#sign-in {
+    opacity: 0.95;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -188,23 +105,12 @@ input[type=button] {
     display: none;
 }
 
-#login {
-    width: 350px;
-    margin: 0px;
-    background-color: white;
-    font-family: 'Fauna One', serif;
-    position: relative;
-    border: 5px solid rgb(90, 158, 181);
-}
-
-.label:after {
-    content: "*";
-    color: red;
-}
-
-#login {
+#signin {
     left: 50%;
-    top: 50%;
-    margin-left: -210px;
-    margin-top: -158px;
+    top: 60%;
+    margin-left: -200px;
+    margin-top: -150px;
+    background-color: white;
+    position: relative;
+    border: 2px solid blue;
 }
